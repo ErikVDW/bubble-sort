@@ -4,7 +4,7 @@ def bubble_sort numbers
     j = 1
     while j < numbers.length
       if numbers[i] > numbers[j]
-        numbers.insert(i, numbers.delete_at(j))
+        numbers.insert(i, numbers.delete_at(j)) # move the value of j ahead of i
       end
       i, j = i + 1, j + 1
     end
